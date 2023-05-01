@@ -1,4 +1,4 @@
-def print_welcome()
+def print_welcome():
     print(" ----------------------------------------")
     print("*       *      *     *     *     *      *")
     print(" *     * *    * *   * *   * *   * *    * ")
