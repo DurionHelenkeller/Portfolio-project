@@ -36,7 +36,7 @@ while len(selected_food_type) == 0:
     user_input = str(input("\nWhat type of food would you like to eat?\nType the beginning of that food type and press enter to see if "
     "it's here.\n")).lower()
 
-    # Serach for user_input in food types data structure here
+    # Search for user_input in food types data structure here
     matching_types = []
     type_list_head = my_food_list.get_head_node()
     while type_list_head is not None:
@@ -68,8 +68,7 @@ while len(selected_food_type) == 0:
                         print("--------------------------\n")
                         sublist_head = sublist_head.get_next_node()
                 restaurant_list_head = restaurant_list_head.get_next_node()
-
-# Ask user if they would like to search for other types of restaurants
-repeat_loop = str(input("\nDo you want to find other restaurants? Enter y for yes and n for no.\n")).lower()
-if repeat_loop == 'y':
-    selected_food_type = ""
+            # Ask user if they would like to search for other types of restaurants
+            repeat_loop = str(input("\nDo you want to find other restaurants? Enter y for yes and n for no.\n")).lower()
+            if repeat_loop == 'y':
+                selected_food_type = ""
