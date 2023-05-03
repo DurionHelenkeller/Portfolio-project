@@ -7,7 +7,7 @@ print_welcome()
 
 # Write code to insert food types into a data structure (Linkedlist) here. The data is data.py
 def insert_food_types():
-    food_type_list = LinkedList
+    food_type_list = LinkedList()
     for food_type in types:
         food_type_list.insert_beginning(food_type)
     return food_type_list
@@ -69,3 +69,7 @@ while len(selected_food_type) == 0:
                         sublist_head = sublist_head.get_next_node()
                 restaurant_list_head = restaurant_list_head.get_next_node()
 
+# Ask user if they would like to search for other types of restaurants
+repeat_loop = str(input("\nDo you want to find other restaurants? Enter y for yes and n for no.\n")).lower()
+if repeat_loop == 'y':
+    selected_food_type = ""
